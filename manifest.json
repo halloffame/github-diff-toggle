@@ -1,0 +1,21 @@
+{
+  "name": "Github Diff Toggle",
+  "description": "Toggle github diff views",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "Toggle Diffs"
+  },
+  "icons": { "128": "icon128.png" },
+  "browser_action": {
+      "default_title": "Toggle diff",
+      "default_icon": "icon128.png"
+  },
+  "manifest_version": 2
+}
