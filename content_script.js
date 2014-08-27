@@ -16,17 +16,17 @@ function show(selector) {
 
 switch(document.body.dataset.visible_diff) {
   case 'i':
-    hide('.diff-line-code-addition');
-    show('.diff-line-code-deletion');
+    hide('.blob-code-addition');
+    show('.blob-code-deletion');
     document.body.dataset.visible_diff = 'd';
     break;
   case 'd':
-    show('.diff-line-code-addition');
-    show('.diff-line-code-deletion');
+    show('.blob-code-addition');
+    show('.blob-code-deletion');
     document.body.dataset.visible_diff = 'off';
     break;
   default:
-    show('.diff-line-code-addition');
-    hide('.diff-line-code-deletion');
+    show('.blob-code-addition');
+    hide('.blob-code-deletion');
     document.body.dataset.visible_diff = 'i';
 }
